@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FutureTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FutureTech</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="clients.html">CLIENTS</a></li>
+                    <li><a href="contact.html" class="active">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="openMenu"></i>
+        </nav>
+    </header>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="contact page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+                <p>Get in touch with our team to discuss your project</p>
+            </div>
+            
+            <div class="contact-intro">
+                <p>We're excited to hear about your project and explore how we can help you achieve your business goals. Whether you have a specific project in mind or just want to learn more about our services, our team is ready to assist you. Fill out the form below or use our contact information to get in touch.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>123 Innovation Drive<br>Tech City, TC 10101<br>United States</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@futuretech.com</p>
+                            <p>support@futuretech.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 2:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name*</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email*</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject*</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the processing of my personal data in accordance with the <a href="#">Privacy Policy</a>.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1627309635255!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What types of projects do you work on?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We work on a wide range of technology projects, including web development, mobile applications, data analytics, cloud solutions, AI & machine learning, and cybersecurity. Our team has experience across various industries and can adapt to the specific needs of your business.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How long does a typical project take?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary depending on the scope, complexity, and specific requirements. A simple website might take 4-6 weeks, while a complex enterprise application could take several months. During our initial consultation, we'll provide you with a detailed timeline based on your project needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What is your pricing structure?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer flexible pricing options, including fixed-price projects, hourly rates, and retainer agreements. The pricing depends on the project scope, technology requirements, and timeline. We provide detailed proposals with transparent pricing after understanding your specific needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you provide ongoing support after project completion?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer various support and maintenance packages to ensure your solution continues to perform optimally after launch. These can include regular updates, security patches, performance monitoring, and feature enhancements. We'll work with you to determine the right level of support for your needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can you work with our existing team?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We're experienced in collaborating with in-house teams and can adapt to your existing workflows and processes. Whether you need us to lead the project or provide specialized expertise to complement your team, we're flexible in our approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Contact us today to schedule a free consultation with our team.</p>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FutureTech</h2>
+                    <p>Innovating Tomorrow</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services.html#web-dev">Web Development</a></li>
+                            <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+                            <li><a href="services.html#data-analytics">Data Analytics</a></li>
+                            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+                            <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FutureTech. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#contact" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.fa-chevron-down');
+                
+                // Initially hide all answers
+                answer.style.display = 'none';
+                
+                question.addEventListener('click', () => {
+                    // Toggle the answer visibility
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        icon.classList.add('rotate');
+                    } else {
+                        answer.style.display = 'none';
+                        icon.classList.remove('rotate');
+                    }
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Here you would typically send the form data to a server
+                    // For demonstration, we'll just show an alert
+                    alert('Thank you for your message! We will get back to you soon.');
+                    
+                    // Reset the form
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
