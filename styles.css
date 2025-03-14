@@ -133,13 +133,10 @@ header {
     box-shadow: 0 2px 10px var(--shadow-color);
     backdrop-filter: blur(10px);
     transition: var(--transition);
-    padding: 10px 0;
+
 }
 
-header.scrolled {
-    padding: 5px 0;
-    background-color: rgba(255, 255, 255, 0.98);
-}
+
 
 nav {
     display: flex;
@@ -150,15 +147,22 @@ nav {
     margin: 0 auto;
 }
 
-.logo h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin: 0;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.logo h1 span {
-    color: var(--primary-color);
+.logo img {
+    height: 20px; /* Reduced height to match FutureTech example */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 180px; /* Control maximum width */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .logo img {
+        height: 30px; /* Slightly smaller on mobile */
+    }
 }
 
 .nav-links ul {
@@ -214,7 +218,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 120px;
     background-color: var(--background-alt);
     overflow: hidden;
 }
@@ -271,7 +275,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 20px;
+    padding: 120px;
     width: 100%;
     max-width: 600px;
 }
@@ -432,18 +436,24 @@ nav {
 
 .about-content {
     display: flex;
-    align-items: center;
+    align-items: center; /* Center vertically */
     gap: 50px;
+    height: 100vh; /* Ensure it takes full height of the viewport */
 }
 
 .about-image {
     flex: 1;
-    position: relative;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100%; /* Ensure it takes full height */
 }
 
 .about-image img {
+    overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 15px 30px var(--shadow-color);
+
 }
 
 .about-text {
@@ -832,13 +842,13 @@ footer {
 }
 
 .footer-logo h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .footer-logo p {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-links {
@@ -1043,19 +1053,6 @@ footer {
     position: relative;
     z-index: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.service-icon-futuristic::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, transparent, var(--primary-color), transparent);
-    z-index: -1;
-    animation: rotate 3s linear infinite;
 }
 
 .service-icon-futuristic i {
@@ -2276,7 +2273,8 @@ footer {
 /* Team Section */
 .team-section {
     padding: 80px 0;
-    background-color: var(--background-alt);
+    background-color: var(--background-color);
+    border-radius: 20px;
 }
 
 .team-grid {
