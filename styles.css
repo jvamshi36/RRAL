@@ -97,7 +97,7 @@ section {
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .section-header h2 {
@@ -3079,5 +3079,20 @@ footer {
     
     .carousel-slide {
         overflow: hidden;
+    }
+}
+
+/* Adjust header size for mobile devices */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Set a normal size for mobile */
+    }
+
+    .logo img {
+        height: 40px; /* Adjust logo height for mobile */
     }
 }
